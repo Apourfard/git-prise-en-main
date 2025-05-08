@@ -17,3 +17,4 @@ d = rand(n)
 # vérification
 using Test
 @test norm(H * d + g) ≤ sqrt(eps()) * norm(g)
+#
