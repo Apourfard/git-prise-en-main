@@ -11,6 +11,11 @@ H = [6.0 2.0 3.0;
 # Sur base de H et g, calculer la direction de Newton d
 
 ### votre code ici ; ne rien modifier d'autre
+#### selon la méthode de Newton:
+d = -inv(H) * g
+#### Résolution du système linéaire H*d=-g avec l'opérateur \ (division matricielle).
+#### Comparative à Ax=b, g est une matrice de colonne, H est un matrice n*n et x est un vecteur  en form de matrice (x1,x2) ou bien(x,y)
+d = H \ -g
 
 d = rand(n)
 ###
