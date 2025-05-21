@@ -11,9 +11,8 @@ H = [6.0 2.0 3.0;
 # Sur base de H et g, calculer la direction de Newton d
 
 ### votre code ici ; ne rien modifier d'autre
-d = H \ -g
-
-d = rand(n)
+d = -inv(H) * g  # direction de Newton
+# d = rand(n)  # Désactivé, cette ligne ne sera plus exécutée
 ###
 
 # vérification
